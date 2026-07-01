@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sicily Cut</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+font-family:Vazirmatn;
+background:#0b0b0b;
+color:#fff;
+}
+
+/* SPLASH */
+#splash{
+position:fixed;
+inset:0;
+background:#000;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+z-index:9999;
+animation:fade 1.2s ease 1.4s forwards;
+}
+
+#splash img{width:110px;height:110px;object-fit:contain}
+#splash h1{color:#d4af37;font-size:16px;letter-spacing:3px;margin-top:10px}
+
+@keyframes fade{to{opacity:0;visibility:hidden}}
+
+/* HEADER */
+header{text-align:center;padding:18px}
+header img{width:85px}
+header h1{color:#d4af37;margin-top:8px;letter-spacing:2px}
+
+/* CARD */
+.card{
+margin:12px;
+padding:14px;
+border:1px solid rgba(212,175,55,0.15);
+border-radius:14px;
+background:rgba(255,255,255,0.03);
+backdrop-filter:blur(8px);
+}
+
+/* BUTTON */
+.btn{
+display:block;
+padding:12px;
+margin:10px 0;
+text-align:center;
+border-radius:10px;
+border:1px solid rgba(255,255,255,0.08);
+color:#fff;
+text-decoration:none;
+}
+
+/* SERVICES */
+.section-title{
+color:#d4af37;
+margin:12px 0;
+font-weight:700;
+}
+
+.row{
+display:flex;
+justify-content:space-between;
+padding:8px 0;
+border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+.name{opacity:0.9}
+.price{color:#d4af37}
+
+footer{
+text-align:center;
+opacity:0.5;
+padding:18px;
+font-size:12px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="splash">
+<img src="assets/logo.png">
+<h1>SICILY CUT</h1>
+</div>
+
+<header>
+<img src="assets/logo.png">
+<h1>SICILY CUT</h1>
+</header>
+
+<div class="card">
+<a class="btn" href="tel:09223935042">تماس</a>
+<a class="btn" href="#">اینستاگرام</a>
+<a class="btn" href="#">تلگرام</a>
+<a class="btn" href="#">واتساپ</a>
+<a class="btn" href="https://maps.google.com?q=35.638930,51.423144">مسیریابی</a>
+</div>
+
+<div class="card">
+
+<div class="section-title">اصلاح</div>
+
+<div class="row"><span class="name">فید</span><span class="price">300T</span></div>
+<div class="row"><span class="name">کلاسیک</span><span class="price">250T</span></div>
+<div class="row"><span class="name">فید ریش</span><span class="price">150T</span></div>
+<div class="row"><span class="name">آنکارد</span><span class="price">150T</span></div>
+
+<div class="section-title">خدمات اضافه</div>
+
+<div class="row"><span class="name">شست‌وشو</span><span class="price">100T</span></div>
+<div class="row"><span class="name">استایل</span><span class="price">100T</span></div>
+<div class="row"><span class="name">حوله یک‌بارمصرف</span><span class="price">100T</span></div>
+
+</div>
+
+<footer>Sicily Cut © 2026</footer>
+
+</body>
+</html>
