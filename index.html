@@ -1,129 +1,137 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sicily Cut</title>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sicily Cut</title>
+    <meta
+      name="description"
+      content="Sicily Cut | تجربه حرفه‌ای و پریمیوم خدمات پیرایش با هویت مینیمال و مدرن"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Sicily Cut">
+          <img src="assets/sicily-cut-logo.svg" alt="Sicily Cut Logo" class="brand-logo" />
+          <span class="brand-text">Sicily Cut</span>
+        </a>
 
-<style>
-body{
-margin:0;
-font-family:Vazirmatn;
-background:#0b0b0b;
-color:#fff;
-}
+        <nav class="nav">
+          <a href="#services">خدمات</a>
+          <a href="#about">درباره ما</a>
+          <a href="#contact">تماس</a>
+        </nav>
+      </div>
+    </header>
 
-/* SPLASH */
-#splash{
-position:fixed;
-inset:0;
-background:#000;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-z-index:9999;
-animation:fade 1.2s ease 1.4s forwards;
-}
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-inner">
+          <p class="eyebrow">Sicily Cut</p>
+          <h1>استایل دقیق، فضای حرفه‌ای، تجربه پریمیوم</h1>
+          <p class="hero-copy">
+            Sicily Cut با هویت مینیمال، اجرای تمیز و تمرکز روی کیفیت، تجربه‌ای حرفه‌ای
+            برای مشتری‌هایی می‌سازد که دقت و ظاهر برایشان مهم است.
+          </p>
 
-#splash img{width:110px;height:110px;object-fit:contain}
-#splash h1{color:#d4af37;font-size:16px;letter-spacing:3px;margin-top:10px}
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+989223935042">رزرو تلفنی</a>
+            <a class="btn btn-secondary" href="https://instagram.com/SicilyCut" target="_blank" rel="noreferrer">اینستاگرام</a>
+          </div>
+        </div>
+      </section>
 
-@keyframes fade{to{opacity:0;visibility:hidden}}
+      <section class="info-strip">
+        <div class="container info-grid">
+          <div class="info-item">
+            <span class="label">ساعت کاری</span>
+            <strong>10:00 AM - 10:00 PM</strong>
+          </div>
+          <div class="info-item">
+            <span class="label">شماره تماس</span>
+            <strong>+98 922 393 5042</strong>
+          </div>
+          <div class="info-item">
+            <span class="label">تلگرام</span>
+            <strong>@meti_sicily</strong>
+          </div>
+        </div>
+      </section>
 
-/* HEADER */
-header{text-align:center;padding:18px}
-header img{width:85px}
-header h1{color:#d4af37;margin-top:8px;letter-spacing:2px}
+      <section class="section" id="services">
+        <div class="container">
+          <h2>خدمات</h2>
+          <div class="services-grid">
+            <article class="service-card">
+              <h3>اصلاح حرفه‌ای</h3>
+              <p>اجرای تمیز، متناسب با فرم چهره و استایل شخصی.</p>
+            </article>
+            <article class="service-card">
+              <h3>استایل و فینیش</h3>
+              <p>فینیش دقیق با ظاهر مرتب، حرفه‌ای و ماندگار.</p>
+            </article>
+            <article class="service-card">
+              <h3>مشاوره استایل</h3>
+              <p>پیشنهاد مدل متناسب با فرم صورت و سلیقه مشتری.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-/* CARD */
-.card{
-margin:12px;
-padding:14px;
-border:1px solid rgba(212,175,55,0.15);
-border-radius:14px;
-background:rgba(255,255,255,0.03);
-backdrop-filter:blur(8px);
-}
+      <section class="section section-alt" id="about">
+        <div class="container narrow">
+          <h2>درباره Sicily Cut</h2>
+          <p>
+            Sicily Cut روی کیفیت اجرا، نظم بصری، و تجربه‌ای حرفه‌ای تمرکز دارد. هویت
+            برند بر پایه مشکی مات و سبز زمردی ساخته شده تا حس اعتماد، دقت و تمایز را
+            منتقل کند.
+          </p>
+        </div>
+      </section>
 
-/* BUTTON */
-.btn{
-display:block;
-padding:12px;
-margin:10px 0;
-text-align:center;
-border-radius:10px;
-border:1px solid rgba(255,255,255,0.08);
-color:#fff;
-text-decoration:none;
-}
+      <section class="section" id="contact">
+        <div class="container">
+          <h2>ارتباط و رزرو</h2>
+          <div class="contact-grid">
+            <a class="contact-card" href="tel:+989223935042">
+              <span>تماس</span>
+              <strong>+98 922 393 5042</strong>
+            </a>
 
-/* SERVICES */
-.section-title{
-color:#d4af37;
-margin:12px 0;
-font-weight:700;
-}
+            <a class="contact-card" href="https://wa.me/989223935042" target="_blank" rel="noreferrer">
+              <span>واتساپ</span>
+              <strong>ارسال پیام</strong>
+            </a>
 
-.row{
-display:flex;
-justify-content:space-between;
-padding:8px 0;
-border-bottom:1px solid rgba(255,255,255,0.06);
-}
+            <a class="contact-card" href="https://instagram.com/SicilyCut" target="_blank" rel="noreferrer">
+              <span>اینستاگرام</span>
+              <strong>@SicilyCut</strong>
+            </a>
 
-.name{opacity:0.9}
-.price{color:#d4af37}
+            <a class="contact-card" href="https://t.me/meti_sicily" target="_blank" rel="noreferrer">
+              <span>تلگرام</span>
+              <strong>@meti_sicily</strong>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-footer{
-text-align:center;
-opacity:0.5;
-padding:18px;
-font-size:12px;
-}
-</style>
-</head>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>Sicily Cut</strong>
+          <p>Premium grooming experience</p>
+        </div>
+        <div class="footer-meta">
+          <span>10:00 AM - 10:00 PM</span>
+          <span>Tehran, Iran</span>
+        </div>
+      </div>
+    </footer>
 
-<body>
-
-<div id="splash">
-<img src="assets/logo.png">
-<h1>SICILY CUT</h1>
-</div>
-
-<header>
-<img src="assets/logo.png">
-<h1>SICILY CUT</h1>
-</header>
-
-<div class="card">
-<a class="btn" href="tel:09223935042">تماس</a>
-<a class="btn" href="#">اینستاگرام</a>
-<a class="btn" href="#">تلگرام</a>
-<a class="btn" href="#">واتساپ</a>
-<a class="btn" href="https://maps.google.com?q=35.638930,51.423144">مسیریابی</a>
-</div>
-
-<div class="card">
-
-<div class="section-title">اصلاح</div>
-
-<div class="row"><span class="name">فید</span><span class="price">300T</span></div>
-<div class="row"><span class="name">کلاسیک</span><span class="price">250T</span></div>
-<div class="row"><span class="name">فید ریش</span><span class="price">150T</span></div>
-<div class="row"><span class="name">آنکارد</span><span class="price">150T</span></div>
-
-<div class="section-title">خدمات اضافه</div>
-
-<div class="row"><span class="name">شست‌وشو</span><span class="price">100T</span></div>
-<div class="row"><span class="name">استایل</span><span class="price">100T</span></div>
-<div class="row"><span class="name">حوله یک‌بارمصرف</span><span class="price">100T</span></div>
-
-</div>
-
-<footer>Sicily Cut © 2026</footer>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
