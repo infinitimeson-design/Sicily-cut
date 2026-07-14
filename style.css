@@ -500,19 +500,27 @@ p{
 
 /* ========================================================= */
 
-.hero>*{
-
-    animation:
-
-    fadeUp .8s ease both;
-
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #2A3A2B;
+    color: #d4d4d4;
+    padding: 16px 40px;
+    border: 1px solid #3A4F3C;
+    border-radius: 999px;
+    font-weight: 600;
+    margin-top: 2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.hero img{
-
-    animation-delay:.15s;
-
+.hero-btn:hover {
+    background: #324635;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
+
 
 .hero h1{
 
