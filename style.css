@@ -1,11 +1,6 @@
-/* 
-   SICILY CUT - BRANDED STYLE SHEET
-   Author: GapGPT for Siavash
-   Status: Draft (Pending Review)
-*/
+/* SICILY CUT - FINALIZED DESIGN (Army Green & Silver) */
 
 :root {
-    /* Base Colors */
     --black: #0B0B0B;
     --background: #111111;
     --surface: rgba(255, 255, 255, .035);
@@ -13,240 +8,44 @@
     --text-pure: #FFFFFF;
     --text-muted: #B9B9B9;
     
-    /* Brand Identity Colors */
+    /* New Brand Colors */
     --silver-metallic: #C0C0C0;
-    --army-green: #4B5320; /* مات و تیره طبق درخواستت */
+    --army-green: #4B5320; 
     --army-green-hover: #5D6629;
     
-    /* Effects */
     --shadow-soft: 0 10px 30px rgba(0,0,0,0.4);
     --radius-lg: 24px;
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* 1. Global Reset & Base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; background-color: var(--black); }
+body { font-family: 'Inter', sans-serif; color: var(--text-pure); line-height: 1.6; overflow-x: hidden; }
 
-html {
-    scroll-behavior: smooth;
-    background-color: var(--black);
-}
+/* Typo */
+h1, h2, h3 { font-family: 'Cinzel', serif; font-weight: 600; letter-spacing: 0.15em; color: var(--silver-metallic); }
 
-body {
-    font-family: 'Inter', sans-serif;
-    color: var(--text-pure);
-    line-height: 1.6;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-}
+/* Components */
+.glass { background: var(--surface); backdrop-filter: blur(12px); border: 1px solid var(--border); border-radius: var(--radius-lg); }
 
-/* ظاهری لوکس با گرادینت بسیار ملایم در پس‌زمینه */
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: radial-gradient(circle at top, rgba(75, 83, 32, 0.12), transparent 70%);
-    pointer-events: none;
-    z-index: -1;
-}
-
-/* 2. Typography - The "Sicily" Look */
-h1, h2, h3 {
-    font-family: 'Cinzel', serif;
-    font-weight: 600;
-    letter-spacing: 0.15em;
-    color:text-align: center;
-    margin-bottom: 60px;
-}
-
-.section-title h2 {
-    font-size: 2rem;
-    position: relative;
-    display: inline-block;
-}
-
-.section-title h2::after {
-    content: "";
-    display: block;
-    width: 40px;
-    height: 1.5px;
-    background: var(--silver-metallic);
-    margin: 15px auto 0;
-    opacity: 0.6;
-}
-
-/* 3. Reusable Components */
-.glass {
-    background: var(--surface);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-soft);
-}
-
-/* دکمه‌های سبز ارتشی مات - Matte Hardware Style */
 .primary-btn, .map-button {
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
     padding: 16px 45px;
     background-color: var(--army-green);
     color: white;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 0.95rem;
     transition: var(--transition-smooth);
-    border: 1px solid rgba(255,255,255,0.05);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-.primary-btn:hover, .map-button:hover {
-    background-color: var(--army-green-hover);
-    transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
-}
+.primary-btn:hover, .map-button:hover { background-color: var(--army-green-hover); transform: translateY(-3px); }
 
-/* 4. Sections Styling */
-.section {
-    padding: 100px 20px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
+/* Section Specifics */
+.section-title { text-align: center; margin-bottom: 50px; }
+.section-title h2::after { content: ""; display: block; width: 60px; height: 1.5px; background: var(--silver-metallic); margin: 15px auto 0; }
 
-/* Hero & Splash */
-#splash {
-    position: fixed;
-    inset: 0;
-    background: var(--black);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 10000;
-    transition: opacity 0.8s ease, visibility 0.8s;
-}
-
-#splash.hide {
-    opacity: 0;
-    visibility: hidden;
-}
-
-#splash h1 {
-    margin-top: 20px;
-    font-size: 2.5rem;
-    text-shadow: 0 0 20px rgba(192, 192, 192, 0.4);
-}
-
-.hero {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.hero p {
-    color: var(--text-muted);
-    font-size: 1.1rem;
-    max-width: 600px;
-}
-
-/* Services Board */
-.board {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-.service {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 40px;
-}
-
-.service span {
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: var(--text-pure);
-}
-
-.service strong {
-    font-family: 'Cinzel', serif;
-    color: var(--silver-metallic);
-    font-size: 1.2rem;
-}
-
-.divider {
-    height: 1px;
-    background: var(--border);
-    margin: 0 40px;
-}
-
-/* Contact Grid */
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-}
-
-.contact-card {
-    padding: 40px 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: var(--transition-smooth);
-}
-
-.contact-card:hover {
-    border-color: var(--silver-metallic);
-    transform: translateY(-5px);
-}
-
-.contact-card span {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    display: block;
-}
-
-.contact-card h3 {
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-.contact-card p {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-}
-
-/* Location Card */
-.map-card {
-    text-align: center;
-    padding: 60px 30px;
-}
-
-.map-icon {
-    font-size: 3rem;
-    margin-bottom: 25px;
-    color: var(--silver-metallic);
-}
-
-.map-card p {
-    margin: 15px 0 35px;
-    color: var(--text-muted);
-}
-
-/* 5. Mobile Adjustments */
-@media (max-width: 768px) {
-    .section { padding: 60px 15px; }
-    h1 { font-size: 1.8rem !important; }
-    .hero-logo { width: 85vw !important; }
-    .service { padding: 20px 25px; }
-    .divider { margin: 0 25px; }
-}
+/* Splash */
+#splash { position: fixed; inset: 0; background: var(--black); display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 10000; transition: 1s ease; }
+#splash.hide { opacity: 0; visibility: hidden; }
