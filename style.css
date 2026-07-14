@@ -21,11 +21,11 @@
 
     --text-secondary:#B9B9B9;
 
-    --emerald:#0F5C4D;
+    --army-green:#4B5320;
 
-    --emerald-light:#1D7A67;
+    --army-green-light:#5D6629;
 
-    --emerald-soft:#8FD3C3;
+    --silver-metallic:#C0C0C0;
 
     --shadow:0 20px 60px rgba(0,0,0,.45);
 
@@ -84,11 +84,8 @@ body::before{
     inset:0;
 
     background:
-
     radial-gradient(circle at top,
-
-    rgba(15,92,77,.18),
-
+    rgba(75,83,32,.18),
     transparent 55%);
 
     pointer-events:none;
@@ -229,7 +226,7 @@ p{
 
     border-radius:999px;
 
-    background:var(--emerald);
+    background:var(--army-green);
 
     color:#fff;
 
@@ -240,8 +237,7 @@ p{
     transition:var(--transition);
 
     box-shadow:
-
-    0 10px 30px rgba(15,92,77,.30);
+    0 10px 30px rgba(75,83,32,.30);
 
 }
 
@@ -249,11 +245,10 @@ p{
 
     transform:translateY(-3px);
 
-    background:var(--emerald-light);
+    background:var(--army-green-light);
 
     box-shadow:
-
-    0 18px 42px rgba(15,92,77,.45);
+    0 18px 42px rgba(75,83,32,.45);
 
 }
 
@@ -277,6 +272,8 @@ p{
 
 }
 
+/* ========================================================= */
+
 .section-title::after{
 
     content:"";
@@ -285,7 +282,7 @@ p{
 
     height:1px;
 
-    background:var(--emerald);
+    background:var(--silver-metallic);
 
 }
 
@@ -307,7 +304,7 @@ p{
 
 .card:hover{
 
-    border-color:rgba(15,92,77,.45);
+    border-color:rgba(75,83,32,.45);
 
     transform:translateY(-4px);
 
@@ -329,12 +326,11 @@ p{
 
 ::-webkit-scrollbar-thumb{
 
-    background:var(--emerald);
+    background:var(--army-green);
 
     border-radius:20px;
 
 }
-
 /* =========================================================
    PART 2
    SPLASH + HERO
@@ -440,7 +436,7 @@ p{
 
     0 0 35px
 
-    rgba(15,92,77,.30));
+    rgba(75,83,32,.30));
 
     animation:
 
@@ -496,178 +492,7 @@ p{
 
     circle,
 
-    rgba(15,92,77,.18),
-
-    transparent 70%
-
-    );
-
-    filter:blur(40px);
-
-    z-index:-1;
-
-}
-
-/* ========================================================= */
-
-.hero>*{
-
-    animation:
-
-    fadeUp .8s ease both;
-
-}
-
-.hero img{
-
-    animation-delay:.15s;
-
-}
-
-.hero h1{
-
-    animation-delay:.25s;
-
-}
-
-.hero p{
-
-    animation-delay:.35s;
-
-}
-
-.hero a{
-
-    animation-delay:.45s;
-
-}
-
-/* ========================================================= */
-
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-
-        transform:
-
-        translateY(26px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:
-
-        translateY(0);
-
-    }
-
-}
-
-/* ========================================================= */
-
-@keyframes logoIntro{
-
-    from{
-
-        opacity:0;
-
-        transform:
-
-        scale(.72);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:
-
-        scale(1);
-
-    }
-
-}
-
-/* ========================================================= */
-
-@keyframes float{
-
-    0%{
-
-        transform:
-
-        translateY(0);
-
-    }
-
-    50%{
-
-        transform:
-
-        translateY(-10px);
-
-    }
-
-    100%{
-
-        transform:
-
-        translateY(0);
-
-    }
-
-}
-
-/* ========================================================= */
-
-@media (max-width:768px){
-
-    .hero{
-
-        padding-top:90px;
-
-    }
-
-    .hero-logo{
-
-        width:125px;
-
-        margin-bottom:28px;
-
-    }
-
-    .hero h1{
-
-        font-size:44px;
-
-        letter-spacing:.25rem;
-
-    }
-
-    .hero p{
-
-        font-size:16px;
-
-        margin-bottom:36px;
-
-    }
-
-    .hero .primary-btn{
-
-        width:100%;
-
-        max-width:280px;
-
-    }
-
-}
-
+    rgba(75,83,32,.18),
 /* =========================================================
    PART 3
    SERVICES + CONTACT
@@ -940,9 +765,178 @@ p{
     }
 
 }
-
 /* =========================================================
    PART 4
+   FOOTER + UTILITIES
+========================================================= */
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    padding:80px 24px;
+
+    text-align:center;
+
+    border-top:1px solid var(--border);
+
+    margin-top:60px;
+
+}
+
+.footer-content{
+
+    max-width:400px;
+
+    margin:auto;
+
+}
+
+.footer-logo{
+
+    width:100px;
+
+    margin-bottom:24px;
+
+    opacity:.8;
+
+}
+
+.social-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:24px;
+
+    margin-bottom:30px;
+
+}
+
+.social-links a{
+
+    font-size:20px;
+
+    color:var(--text-secondary);
+
+    transition:var(--transition);
+
+}
+
+.social-links a:hover{
+
+    color:var(--emerald);
+
+    transform:translateY(-3px);
+
+}
+
+.copyright{
+
+    font-size:13px;
+
+    color:var(--muted);
+
+    letter-spacing:.05em;
+
+}
+
+/* ===========================
+   UTILITIES
+=========================== */
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 32px;
+
+    border-radius:var(--radius);
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+    cursor:pointer;
+
+    text-decoration:none;
+
+    border:none;
+
+}
+
+.primary-btn{
+
+    background:var(--emerald);
+
+    color:var(--black);
+
+}
+
+.primary-btn:hover{
+
+    background:#fff;
+
+    transform:scale(1.02);
+
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+@keyframes fadeIn{
+
+    from{opacity:0;}
+
+    to{opacity:1;}
+
+}
+
+@keyframes slideDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    footer{
+
+        padding:60px 24px;
+
+    }
+
+    .social-links{
+
+        gap:30px;
+
+    }
+
+}
+/* =========================================================
+   PART 5
    LOCATION + FOOTER
 ========================================================= */
 
@@ -952,133 +946,67 @@ p{
 
 .location{
 
-    max-width:820px;
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:24px;
+
+    max-width:1100px;
 
     margin:auto;
 
+    align-items:start;
+
 }
 
-.map-card{
+.location-card{
 
-    background:var(--surface);
+    padding:28px;
+
+    border-radius:var(--radius);
 
     border:1px solid var(--border);
 
-    border-radius:var(--radius);
+    background:var(--surface);
 
     backdrop-filter:blur(20px);
 
     box-shadow:var(--shadow);
 
-    text-align:center;
+}
 
-    padding:56px 34px;
+.location-card h3{
+
+    margin-bottom:14px;
+
+    font-size:20px;
 
 }
 
-.map-icon{
+.location-card p{
 
-    width:82px;
-
-    height:82px;
-
-    margin:0 auto 28px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    border-radius:50%;
-
-    background:rgba(15,92,77,.12);
-
-    color:var(--emerald-soft);
-
-    font-size:34px;
-
-    transition:var(--transition);
-
-}
-
-.map-card:hover .map-icon{
-
-    background:var(--emerald);
-
-    color:#fff;
-
-    transform:translateY(-4px);
-
-}
-
-.map-card h3{
-
-    font-size:22px;
-
-    margin-bottom:16px;
-
-}
-
-.map-card p{
-
-    max-width:520px;
-
-    margin:0 auto 34px;
+    color:var(--text-secondary);
 
     line-height:1.9;
 
-}
-
-.map-button{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    min-width:220px;
-
-    padding:16px 34px;
-
-    border-radius:999px;
-
-    background:var(--emerald);
-
-    color:#fff;
-
-    font-weight:600;
-
-    letter-spacing:.05em;
-
-    transition:var(--transition);
-
-    box-shadow:
-
-        0 12px 32px
-
-        rgba(15,92,77,.28);
+    font-size:15px;
 
 }
 
-.map-button:hover{
+.map-frame{
 
-    background:var(--emerald-light);
+    width:100%;
 
-    transform:translateY(-3px);
+    min-height:360px;
 
-    box-shadow:
+    border:0;
 
-        0 20px 45px
+    border-radius:var(--radius);
 
-        rgba(15,92,77,.40);
+    overflow:hidden;
 
-}
-
-.map-button:active{
-
-    transform:scale(.98);
+    box-shadow:var(--shadow);
 
 }
 
@@ -1088,95 +1016,37 @@ p{
 
 footer{
 
-    max-width:var(--container);
-
-    margin:90px auto 40px;
-
-    padding:40px 28px;
+    padding:72px 24px 36px;
 
     text-align:center;
 
-}
-
-.footer-card{
-
-    background:var(--surface);
-
-    border:1px solid var(--border);
-
-    border-radius:var(--radius);
-
-    backdrop-filter:blur(18px);
-
-    padding:46px 24px;
-
-    box-shadow:var(--shadow);
+    color:var(--text-secondary);
 
 }
 
-footer img{
+footer .footer-inner{
 
-    width:58px;
+    max-width:960px;
 
-    margin:0 auto 22px;
+    margin:auto;
 
-    opacity:.92;
+    border-top:1px solid var(--border);
 
-}
-
-footer h3{
-
-    letter-spacing:.28rem;
-
-    font-size:22px;
+    padding-top:28px;
 
 }
 
-.footer-line{
+footer a{
 
-    width:90px;
+    color:var(--emerald-soft);
 
-    height:1px;
-
-    margin:26px auto;
-
-    background:
-
-    linear-gradient(
-
-        90deg,
-
-        transparent,
-
-        var(--emerald),
-
-        transparent
-
-    );
+    transition:var(--transition);
 
 }
 
-footer small{
+footer a:hover{
 
-    display:block;
-
-    color:#8E8E8E;
-
-    font-size:14px;
-
-    letter-spacing:.08em;
-
-}
-
-/* ===========================
-   HOVER
-=========================== */
-
-.footer-card:hover{
-
-    border-color:
-
-        rgba(15,92,77,.35);
+    color:var(--emerald);
 
 }
 
@@ -1186,64 +1056,33 @@ footer small{
 
 @media(max-width:768px){
 
-    .map-card{
+    .location{
 
-        padding:40px 24px;
+        grid-template-columns:1fr;
 
-    }
-
-    .map-icon{
-
-        width:68px;
-
-        height:68px;
-
-        font-size:28px;
+        gap:18px;
 
     }
 
-    .map-card h3{
+    .location-card{
 
-        font-size:20px;
+        padding:22px;
 
     }
 
-    .map-button{
+    .map-frame{
 
-        width:100%;
+        min-height:280px;
 
     }
 
     footer{
 
-        margin-top:70px;
-
-        padding:20px;
-
-    }
-
-    .footer-card{
-
-        padding:34px 20px;
-
-    }
-
-    footer img{
-
-        width:48px;
-
-    }
-
-    footer h3{
-
-        font-size:18px;
-
-        letter-spacing:.18rem;
+        padding:60px 20px 28px;
 
     }
 
 }
-
 /* =========================================================
    PART 5
    RESPONSIVE • ANIMATIONS • FINAL POLISH
