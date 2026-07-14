@@ -1,107 +1,117 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sicily Cut</title>
-    <meta name="description" content="Sicily Cut | Modern Barber Studio">
-    <meta name="theme-color" content="#0B0B0B">
-    <link rel="icon" href="assets/favicon.ico">
+    <title>Sicily Cut | سیصلی کات</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+<body>
 
-<body style="margin: 0; padding: 0; background-color: #0B0B0B; color: white; font-family: 'Inter', sans-serif;">
-
-    <!-- Splash -->
-    <div id="splash" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 50px 0;">
-        <img src="assets/sicily-cut-logo.png" alt="Sicily Cut Logo" style="width: 200px !important; height: auto; display: block; margin: 0 auto;">
-        <h1 style="margin-top: 20px; font-family: 'Cinzel', serif;">SICILY CUT</h1>
+    <!-- Splash Screen -->
+    <div id="splash">
+        <img src="assets/sicily-cut-logo.png" alt="Sicily Cut Logo">
+        <h1 style="color: #C0C0C0; text-shadow: 0 0 15px rgba(192,192,192,0.3);">SICILY CUT</h1>
     </div>
 
-    <!-- Main -->
-    <main id="app">
-
-        <!-- Hero Section - بخش مورد نظر شما -->
-        <section class="hero" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 100px 20px;">
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="assets/sicily-cut-logo.png" alt="Sicily Cut Logo" class="hero-logo" 
+                 style="width: 70vw; max-width: 600px; min-width: 280px; height: auto; display: block; margin: 0 auto 40px;">
             
-            <!-- لوگو با تنظیمات جدید: ۵۰٪ بزرگتر در گوشی و فیتِ نوشته در دسکتاپ -->
-            <img class="hero-logo" src="assets/sicily-cut-logo.png" alt="Logo" 
-                 style="width: 55vw !important; max-width: 460px; min-width: 280px; height: auto; display: block; margin: 0 auto 40px auto !important;">
+            <h1 style="color: #C0C0C0; margin-bottom: 20px;">SICILY CUT</h1>
+            <p>تجربه برترین استایل‌های کلاسیک و مدرن در محیطی حرفه‌ای</p>
             
-            <!-- نوشته زیر لوگو -->
-            <h1 style="font-family: 'Cinzel', serif; letter-spacing: 5px; margin-bottom: 40px; font-size: clamp(1.8rem, 6vw, 3.5rem); text-transform: uppercase;">
-                SICILY CUT
-            </h1>
-
-            <!-- دکمه رزرو -->
-            <a class="primary-btn" href="tel:+989223935042" style="text-decoration: none; padding: 15px 40px; border-radius: 50px; font-weight: bold;">
-                رزرو تلفنی
-            </a>
-        </section>
-
-        <!-- Services -->
-        <section class="section">
-            <h2 style="text-align: center; font-family: 'Cinzel', serif; margin-bottom: 30px;">SERVICES</h2>
-            <div class="board">
-                <div class="service"><span>Classic Cut</span><strong>250 T</strong></div>
-                <div class="divider"></div>
-                <div class="service"><span>Fade Cut</span><strong>300 T</strong></div>
-                <div class="divider"></div>
-                <div class="service"><span>Beard Fade</span><strong>150 T</strong></div>
-                <div class="divider"></div>
-                <div class="service"><span>Line Up</span><strong>150 T</strong></div>
-                <div class="divider"></div>
-                <div class="service"><span>Wash</span><strong>100 T</strong></div>
-                <div class="divider"></div>
-                <div class="service"><span>Styling</span><strong>100 T</strong></div>
+            <div style="display: flex; gap: 15px; justify-content: center; margin-top: 30px;">
+                <a href="tel:+989223935042" class="primary-btn">رزرو تلفنی</a>
             </div>
         </section>
 
-        <!-- Contact -->
-        <section class="section">
-            <h2 style="text-align: center; font-family: 'Cinzel', serif;">CONTACT</h2>
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="section-title">
+                <h2>SERVICES</h2>
+            </div>
+            <div class="board glass">
+                <div class="service">
+                    <span>Classic Cut</span>
+                    <strong>250 T</strong>
+                </div>
+                <div class="divider"></div>
+                <div class="service">
+                    <span>Fade Cut</span>
+                    <strong>300 T</strong>
+                </div>
+                <div class="divider"></div>
+                <div class="service">
+                    <span>Beard Fade</span>
+                    <strong>150 T</strong>
+                </div>
+                <div class="divider"></div>
+                <div class="service">
+                    <span>Line Up</span>
+                    <strong>150 T</strong>
+                </div>
+                <div class="divider"></div>
+                <div class="service">
+                    <span>Wash</span>
+                    <strong>100 T</strong>
+                </div>
+                <div class="divider"></div>
+                <div class="service">
+                    <span>Styling</span>
+                    <strong>100 T</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-title">
+                <h2>CONTACT</h2>
+            </div>
             <div class="contact-grid">
-                <a href="tel:+989223935042" class="contact-card">
+                <a href="tel:+989223935042" class="contact-card glass">
                     <span>📞</span>
-                    <div><h3>Call</h3><p>+98 922 393 5042</p></div>
+                    <h3>تماس</h3>
+                    <p>+98 922 393 5042</p>
                 </a>
-                <a href="https://instagram.com/SicilyCut" target="_blank" class="contact-card">
+                <a href="https://instagram.com/SicilyCut" class="contact-card glass">
                     <span>📷</span>
-                    <div><h3>Instagram</h3><p>@SicilyCut</p></div>
+                    <h3>اینستاگرام</h3>
+                    <p>@SicilyCut</p>
                 </a>
-                <a href="https://wa.me/989223935042" target="_blank" class="contact-card">
+                <a href="https://wa.me/989223935042" class="contact-card glass">
                     <span>💬</span>
-                    <div><h3>WhatsApp</h3><p>Message Now</p></div>
+                    <h3>واتس‌اپ</h3>
+                    <p>Message Now</p>
                 </a>
-                <a href="https://t.me/meti_sicily" target="_blank" class="contact-card">
+                <a href="https://t.me/meti_sicily" class="contact-card glass">
                     <span>✈</span>
-                    <div><h3>Telegram</h3><p>@meti_sicily</p></div>
+                    <h3>تلگرام</h3>
+                    <p>@meti_sicily</p>
                 </a>
             </div>
         </section>
 
-        <!-- Location -->
-        <section class="section" style="text-align: center; padding-bottom: 80px;">
-            <h2 style="font-family: 'Cinzel', serif;">LOCATION</h2>
-            <a class="map-button" href="https://maps.app.goo.gl/CjzZJmxNQZTVt2Y47" target="_blank" rel="noopener noreferrer">
-                مشاهده روی نقشه
-            </a>
+        <!-- Location Section -->
+        <section id="location" class="section">
+            <div class="section-title">
+                <h2>LOCATION</h2>
+            </div>
+            <div class="map-card glass">
+                <div class="map-icon">📍</div>
+                <h3>آدرس ما</h3>
+                <p>تهران، محله جردن، خیابان گلفام، پلاک ...</p>
+                <a href="https://maps.google.com" class="map-button">مشاهده روی نقشه</a>
+            </div>
         </section>
-
     </main>
 
-    <!-- Footer -->
-    <footer style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 60px 0; background: #070707;">
-        <img src="assets/sicily-cut-logo.png" alt="Logo" style="width: 120px; height: auto; margin-bottom: 15px; opacity: 0.8;">
-        <h3 style="font-family: 'Cinzel', serif; font-size: 1.2rem;">SICILY CUT</h3>
-        <small style="color: #666;">© 2026 | All Rights Reserved</small>
-    </footer>
-
     <script src="script.js"></script>
-
 </body>
 </html>
