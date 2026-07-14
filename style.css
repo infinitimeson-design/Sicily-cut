@@ -1,51 +1,90 @@
-/* SICILY CUT - FINALIZED DESIGN (Army Green & Silver) */
+/* 
+   SICILY CUT - COMPLETE BRANDED STYLESHEET
+   Colors: Matte Army Green & Silver Metallic
+   Status: Awaiting Visual Confirmation
+*/
 
 :root {
     --black: #0B0B0B;
     --background: #111111;
     --surface: rgba(255, 255, 255, .035);
+    --surface-hover: rgba(255, 255, 255, .06);
     --border: rgba(255, 255, 255, .08);
-    --text-pure: #FFFFFF;
+    --text-pure: #F5F5F5;
     --text-muted: #B9B9B9;
     
-    /* New Brand Colors */
-    --silver-metallic: #C0C0C0;
-    --army-green: #4B5320; 
+    /* Brand Colors Update */
+    --army-green: #4B5320;
     --army-green-hover: #5D6629;
+    --silver-accent: #C0C0C0;
     
-    --shadow-soft: 0 10px 30px rgba(0,0,0,0.4);
-    --radius-lg: 24px;
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-main: 0 20px 60px rgba(0,0,0,.45);
+    --radius: 24px;
+    --container: 1100px;
+    --transition: .35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; background-color: var(--black); }
-body { font-family: 'Inter', sans-serif; color: var(--text-pure); line-height: 1.6; overflow-x: hidden; }
+/* Reset & Base */
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { 
+    background: var(--black); 
+    color: var(--text-pure); 
+    font-family: "Inter", sans-serif; 
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
 
-/* Typo */
-h1, h2, h3 { font-family: 'Cinzel', serif; font-weight: 600; letter-spacing: 0.15em; color: var(--silver-metallic); }
+/* Typography with Silver Accents */
+h1, h2, h3 { 
+    font-family: "Cinzel", serif; 
+    font-weight: 600; 
+    letter-spacing: .18em;items: center;
+    gap: 16px;
+    margin-bottom: 60px;
+}
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 1.5px;
+    background: var(--silver-accent);
+}
 
-/* Components */
-.glass { background: var(--surface); backdrop-filter: blur(12px); border: 1px solid var(--border); border-radius: var(--radius-lg); }
-
+/* Buttons - Matte Army Green */
 .primary-btn, .map-button {
     display: inline-flex;
-    padding: 16px 45px;
-    background-color: var(--army-green);
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: 600;
-    transition: var(--transition-smooth);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    backdrop-filter: blur(18px);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
 }
 
-.primary-btn:hover, .map-button:hover { background-color: var(--army-green-hover); transform: translateY(-3px); }
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    max-width: var(--container);
+    margin: auto;
+    text-align: center;
+    padding: 120px 24px 90px;
+}
+.hero-logo { width: 170px; margin-bottom: 36px; filter: drop-shadow(0 0 20px rgba(192,192,192,0.2)); }
 
-/* Section Specifics */
-.section-title { text-align: center; margin-bottom: 50px; }
-.section-title h2::after { content: ""; display: block; width: 60px; height: 1.5px; background: var(--silver-metallic); margin: 15px auto 0; }
+/* Services (Board) */
+.board {
+    max-width var(--shadow-main);
+}
+.service {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 34px;
+    transition: var(--transition);
+}
+.service:hover { background: rgba(75, 83, 32, 0.15); }
+.service strong { color: var(--silver-accent); font-size: 17px; }
 
-/* Splash */
-#splash { position: fixed; inset: 0; background: var(--black); display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 10000; transition: 1s ease; }
-#splash.hide { opacity: 0; visibility: hidden; }
+/* Splash Screen */
+#splash {
+    position: fixed;
+    inset: 0. در گیت‌هاب Commit و Push کن.
+۴. **سایتت را باز کن و چند بار Refresh (یا Ctrl+F5) کن** که مطمئن شوی کش مرورگر پاک شده.
+
+وقتی این کار را کردی، بهم بگو تا این بار **واقعاً** با هم چک کنیم که همه چیز طبق سلیقه تو (ایتالیایی، شیک و حرفه‌ای) شده یا نه. دمت گرم سیاوش! 💈🔥
