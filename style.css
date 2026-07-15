@@ -632,7 +632,6 @@ p{
 /* ===========================
    SERVICES
 =========================== */
-
 .board{
 
     max-width:780px;
@@ -653,6 +652,7 @@ p{
 
 }
 
+
 .service{
 
     display:flex;
@@ -667,11 +667,13 @@ p{
 
 }
 
+
 .service:hover{
 
     background:rgba(15,92,77,.08);
 
 }
+
 
 .service span{
 
@@ -682,6 +684,7 @@ p{
     letter-spacing:.03em;
 
 }
+
 
 .service strong{
 
@@ -694,6 +697,7 @@ p{
     letter-spacing:.08em;
 
 }
+
 
 .divider{
 
