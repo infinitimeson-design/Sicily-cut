@@ -987,100 +987,31 @@ p{
 /* ===========================
    FOOTER
 =========================== */
-
-footer{
-
-    max-width:var(--container);
-
-    margin:90px auto 40px;
-
-    padding:40px 28px;
-
+.site-footer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
     text-align:center;
-
+    padding:60px 0;
+    background:var(--black);
 }
 
-.footer-card{
-
-    background:var(--surface);
-
-    border:1px solid var(--border);
-
-    border-radius:var(--radius);
-
-    backdrop-filter:blur(18px);
-
-    padding:46px 24px;
-
-    box-shadow:var(--shadow);
-
+.site-footer h3{
+    font-family:"Cinzel",serif;
+    font-size:1.2rem;
+    font-weight:600;
+    letter-spacing:.18em;
+    color:var(--text);
+    margin:0 0 10px;
 }
 
-footer img{
-
-    width:58px;
-
-    margin:0 auto 22px;
-
-    opacity:.92;
-
+.site-footer small{
+    color:#666;
+    font-size:.9rem;
+    letter-spacing:.04em;
 }
 
-footer h3{
-
-    letter-spacing:.28rem;
-
-    font-size:22px;
-
-}
-
-.footer-line{
-
-    width:90px;
-
-    height:1px;
-
-    margin:26px auto;
-
-    background:
-
-    linear-gradient(
-
-        90deg,
-
-        transparent,
-
-        var(--emerald),
-
-        transparent
-
-    );
-
-}
-
-footer small{
-
-    display:block;
-
-    color:#8E8E8E;
-
-    font-size:14px;
-
-    letter-spacing:.08em;
-
-}
-
-/* ===========================
-   HOVER
-=========================== */
-
-.footer-card:hover{
-
-    border-color:
-
-        rgba(15,92,77,.35);
-
-}
 
 /* ===========================
    MOBILE
