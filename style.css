@@ -1,4 +1,4 @@
-* =========================================================
+/* =========================================================
    SICILY CUT
    STYLE.CSS
    PART 1
@@ -37,7 +37,7 @@
 
 }
 
-* ========================================================= */
+/* ========================================================= */
 
 *{
 
@@ -206,62 +206,32 @@ p{
 }
 
 /* ========================================================= */
-/* =========================================================
-   GLASS PRIMARY BUTTON
-========================================================= */
 
-.primary-btn{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    min-width:220px;
-
-    padding:16px 40px;
-
-    background:var(--surface);
-
-    color:#c2c2c2;
-
-    border:1px solid var(--border);
-
-    border-radius:999px;
-
-    backdrop-filter:blur(18px);
-
-    -webkit-backdrop-filter:blur(18px);
-
-    font-family:"Inter",sans-serif;
-
-    font-weight:600;
-
-    letter-spacing:.12em;
-
-    transition:var(--transition);
-
+/* --- اصلاح دکمه رزرو تلفنی (Primary Button) --- */
+.primary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #2A3A2B; /* سبز ارتشی */
+    color: #d4d4d4; /* نقره‌ای مات */
+    padding: 16px 40px;
+    border: 1px solid #3A4F3C; /* لبه نقره‌ای تیره */
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-
-.primary-btn:hover{
-
-    background:rgba(15,92,77,.12);
-
-    border-color:rgba(15,92,77,.45);
-
-    transform:translateY(-3px);
-
-    color:#ffffff;
-
+.primary-btn:hover {
+    background: #324635; /* کمی روشن‌تر در حالت هوور */
+    transform: translateY(-2px);
+    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
 
-
-.primary-btn:active{
-
-    transform:scale(.97);
-
+.primary-btn:active {
+    transform: scale(0.98);
 }
 
 
@@ -662,6 +632,7 @@ p{
 /* ===========================
    SERVICES
 =========================== */
+
 .board{
 
     max-width:780px;
@@ -682,7 +653,6 @@ p{
 
 }
 
-
 .service{
 
     display:flex;
@@ -697,13 +667,11 @@ p{
 
 }
 
-
 .service:hover{
 
     background:rgba(15,92,77,.08);
 
 }
-
 
 .service span{
 
@@ -714,7 +682,6 @@ p{
     letter-spacing:.03em;
 
 }
-
 
 .service strong{
 
@@ -727,7 +694,6 @@ p{
     letter-spacing:.08em;
 
 }
-
 
 .divider{
 
@@ -985,64 +951,36 @@ p{
 
 }
 
-/* ===========================
-   GLASS LOCATION BUTTON
-=========================== */
-
 .map-button{
-
     display:inline-flex;
-
     align-items:center;
-
     justify-content:center;
-
+    gap:12px;
     min-width:220px;
-
-    padding:16px 40px;
-
-    background:var(--surface);
-
-    color:#c2c2c2;
-
-    border:1px solid var(--border);
-
+    background:#2A3A2B;
+    color:#d4d4d4;
+    padding:14px 28px;
+    border:1px solid #3A4F3C;
     border-radius:999px;
-
-    backdrop-filter:blur(18px);
-
-    -webkit-backdrop-filter:blur(18px);
-
-    font-family:"Inter",sans-serif;
-
+    font-family:'Inter', sans-serif;
+    font-size:0.95rem;
     font-weight:600;
-
-    letter-spacing:.12em;
-
+    text-transform:uppercase;
+    letter-spacing:0.08em;
     text-decoration:none;
-
-    transition:var(--transition);
-
+    box-shadow:0 4px 14px rgba(0,0,0,0.25);
+    transition:all .25s ease;
 }
-
 
 .map-button:hover{
-
-    background:rgba(15,92,77,.12);
-
-    border-color:rgba(15,92,77,.45);
-
-    transform:translateY(-3px);
-
-    color:#ffffff;
-
+    background:#324635;
+    color:#f2f2f2;
+    border-color:#506754;
+    transform:translateY(-2px);
 }
 
-
 .map-button:active{
-
-    transform:scale(.97);
-
+    transform:scale(0.98);
 }
 
 
@@ -1486,58 +1424,6 @@ html{
 img{
 
     image-rendering:auto;
-
-}
-
-/* ===========================
-   OPENING HOURS
-=========================== */
-
-.hours-card{
-
-    max-width:500px;
-
-    margin:auto;
-
-    text-align:center;
-
-    background:var(--surface);
-
-    border:1px solid var(--border);
-
-    border-radius:var(--radius);
-
-    backdrop-filter:blur(20px);
-
-    padding:36px 24px;
-
-    box-shadow:var(--shadow);
-
-}
-
-
-.hours-card h3{
-
-    font-family:"Cinzel",serif;
-
-    color:#c2c2c2;
-
-    font-size:20px;
-
-    letter-spacing:.12em;
-
-    margin-bottom:12px;
-
-}
-
-
-.hours-card p{
-
-    color:#b8b8b8;
-
-    font-size:17px;
-
-    letter-spacing:.08em;
 
 }
 
