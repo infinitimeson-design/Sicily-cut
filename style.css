@@ -206,32 +206,62 @@ p{
 }
 
 /* ========================================================= */
+/* =========================================================
+   GLASS PRIMARY BUTTON
+========================================================= */
 
-/* --- اصلاح دکمه رزرو تلفنی (Primary Button) --- */
-.primary-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: #2A3A2B; /* سبز ارتشی */
-    color: #d4d4d4; /* نقره‌ای مات */
-    padding: 16px 40px;
-    border: 1px solid #3A4F3C; /* لبه نقره‌ای تیره */
-    border-radius: 999px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+.primary-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:220px;
+
+    padding:16px 40px;
+
+    background:var(--surface);
+
+    color:#c2c2c2;
+
+    border:1px solid var(--border);
+
+    border-radius:999px;
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    font-family:"Inter",sans-serif;
+
+    font-weight:600;
+
+    letter-spacing:.12em;
+
+    transition:var(--transition);
+
 }
 
-.primary-btn:hover {
-    background: #324635; /* کمی روشن‌تر در حالت هوور */
-    transform: translateY(-2px);
-    color: #ffffff;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+
+.primary-btn:hover{
+
+    background:rgba(15,92,77,.12);
+
+    border-color:rgba(15,92,77,.45);
+
+    transform:translateY(-3px);
+
+    color:#ffffff;
+
 }
 
-.primary-btn:active {
-    transform: scale(0.98);
+
+.primary-btn:active{
+
+    transform:scale(.97);
+
 }
 
 
