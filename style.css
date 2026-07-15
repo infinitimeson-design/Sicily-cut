@@ -985,36 +985,64 @@ p{
 
 }
 
+/* ===========================
+   GLASS LOCATION BUTTON
+=========================== */
+
 .map-button{
+
     display:inline-flex;
+
     align-items:center;
+
     justify-content:center;
-    gap:12px;
+
     min-width:220px;
-    background:#2A3A2B;
-    color:#d4d4d4;
-    padding:14px 28px;
-    border:1px solid #3A4F3C;
+
+    padding:16px 40px;
+
+    background:var(--surface);
+
+    color:#c2c2c2;
+
+    border:1px solid var(--border);
+
     border-radius:999px;
-    font-family:'Inter', sans-serif;
-    font-size:0.95rem;
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    font-family:"Inter",sans-serif;
+
     font-weight:600;
-    text-transform:uppercase;
-    letter-spacing:0.08em;
+
+    letter-spacing:.12em;
+
     text-decoration:none;
-    box-shadow:0 4px 14px rgba(0,0,0,0.25);
-    transition:all .25s ease;
+
+    transition:var(--transition);
+
 }
+
 
 .map-button:hover{
-    background:#324635;
-    color:#f2f2f2;
-    border-color:#506754;
-    transform:translateY(-2px);
+
+    background:rgba(15,92,77,.12);
+
+    border-color:rgba(15,92,77,.45);
+
+    transform:translateY(-3px);
+
+    color:#ffffff;
+
 }
 
+
 .map-button:active{
-    transform:scale(0.98);
+
+    transform:scale(.97);
+
 }
 
 
