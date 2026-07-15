@@ -497,30 +497,6 @@ p{
     transition: all 0.3s ease;
 }
 
-.hero-btn:hover {
-    background: #324635;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-
-.hero h1{
-
-    animation-delay:.25s;
-
-}
-
-.hero p{
-
-    animation-delay:.35s;
-
-}
-
-.hero a{
-
-    animation-delay:.45s;
-
-}
 
 /* ========================================================= */
 
