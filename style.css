@@ -457,7 +457,23 @@ p{
     margin-bottom:22px;
 
 }
+.hero-tagline{
 
+    color:#b8b8b8;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:14px;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    margin-bottom:40px;
+
+    opacity:.85;
+
+}
 .hero p{
 
     max-width:620px;
