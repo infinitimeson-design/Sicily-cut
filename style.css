@@ -336,6 +336,22 @@ p{
     border-radius:20px;
 
 }
+   .section-divider{
+
+    width:120px;
+
+    height:1px;
+
+    margin:0 auto;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.18),
+        transparent
+    );
+
+}
 
 /* =========================================================
    PART 2
