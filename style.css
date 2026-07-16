@@ -336,22 +336,27 @@ p{
     border-radius:20px;
 
 }
-  .section-divider{
+ .section-divider{
 
-    width:220px;
+    width:340px;
 
-    height:1px;
+    height:2px;
 
-    margin:20px auto;
+    margin:38px auto;
+
+    border-radius:999px;
 
     background:linear-gradient(
         90deg,
         transparent 0%,
-        rgba(143,211,195,.15) 20%,
-        rgba(143,211,195,.65) 50%,
-        rgba(143,211,195,.15) 80%,
+        rgba(143,211,195,.20) 12%,
+        rgba(143,211,195,.95) 50%,
+        rgba(143,211,195,.20) 88%,
         transparent 100%
     );
+
+    box-shadow:
+        0 0 12px rgba(15,92,77,.25);
 
 }
 /* =========================================================
