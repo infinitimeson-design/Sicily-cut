@@ -336,23 +336,24 @@ p{
     border-radius:20px;
 
 }
-   .section-divider{
+  .section-divider{
 
-    width:120px;
+    width:220px;
 
     height:1px;
 
-    margin:0 auto;
+    margin:20px auto;
 
     background:linear-gradient(
         90deg,
-        transparent,
-        rgba(255,255,255,.18),
-        transparent
+        transparent 0%,
+        rgba(143,211,195,.15) 20%,
+        rgba(143,211,195,.65) 50%,
+        rgba(143,211,195,.15) 80%,
+        transparent 100%
     );
 
 }
-
 /* =========================================================
    PART 2
    SPLASH + HERO
